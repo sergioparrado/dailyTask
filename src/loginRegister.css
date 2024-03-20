@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Universales */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+
+p{
+    font-size: 14px;
+}
+
+h2 , h1{
+    font-weight: 600;
+}
+/* contenedor principal */
+
+
+.container{
+    box-shadow: 0px 0px 10px #dadada;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 800px;
+    height: 500px;
+}
+
+/* Formulario */
+
+.container_form1 {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    background-color: #fff;
+    width: 100%;
+}
+.container_form2 {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    background-color: #fff;
+    width: 100%;
+}
+
+.container_form1 form{
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.5s;
+}
+.container_form2 form{
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.5s;
+}
+
+.container_form1 h1{
+    margin-bottom: 20px;
+    font-size: 32px;
+/*  */}
+
+.container_form1 span{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.container_form2 h1{
+    margin-bottom: 20px;
+    font-size: 32px;
+/*  */}
+
+.container_form2 span{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.socials {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.socials ion-icon{
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+}
+
+.socials ion-icon:hover{
+    transition:all 0.5s ease;
+    background-color: rgb(248, 247, 247);
+}
+
+.container_input input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding:10px 10px;
+    background-color: #ffffff00;
+    & :active {
+        border: none;
+    }
+}
+
+.container_input ion-icon{
+    font-size: 20px;
+    color: #686868;
+}
+
+.container_input input {
+    font-size: 14px;
+}
+
+.container_input{
+    padding: 0px 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.container_form1 a{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: rgb(180, 0, 0);
+}
+
+.container_form1 button{
+    border: none;
+    padding: 10px 40px;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: rgb(180, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+
+.container_form2 a{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: rgb(180, 0, 0);
+}
+
+.container_form2 button{
+    border: none;
+    padding: 10px 40px;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: rgb(180, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+
+.container_form button:hover{
+    background-color: rgb(145, 0, 0);
+    /* transition: all ease 0.5s; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.379);
+}
+
+
+/* Form animations */
+
+.register {
+    transform: translateX(-100%);
+}
+
+.container.toggle .register {
+    transform: translateX(0%);
+}
+
+.container.toggle .login {
+    transform: translateX(100%);
+}
+
+/* Caja welcome */
+
+.container_welcome {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.4s ease-in-out all;
+    background-image: linear-gradient(to top, #640101, #890007, #af0008, #d60006, #ff0000);
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    border-radius: 80px 0px 0px 80px;
+}
+
+.container_welcome button{
+    border: none;
+    padding: 10px 40px;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: solid white 1px;
+    color:white;
+    cursor: pointer;
+}
+
+.container_welcome .welcome{
+    transition: 0.4s ease all;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    color: white;
+}
+
+.welcome_register {
+    transform: translateX(100%);
+}
+
+.welcome_register h2{
+    font-size: 40px;
+}
+.welcome_login h2{
+    font-size: 40px;
+}
+            
+/* toggles para animacion welcome */
+.container.toggle .welcome_login {
+    transform: translateX(-100%);
+}
+
+.container.toggle .welcome_register {
+    transform: translateX(0%);
+}
+
+.container.toggle .container_welcome{
+    transform: translateX(0%);
+    border-radius: 0px 80px 80px 0px;
+}

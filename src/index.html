@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Task Flow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="loginRegister.css" />
+    <link rel="website icon" href="/assets/DailyTaskLogo.png">
+    <link rel="stylesheet" href="/src/toggle.css">
+  </head>
+  <!-- Body beginning -->
+  <body class="w-100 h-dvh flex flex-col m-0 bg-gray-100">
+    <!-- Header section -->
+    <header
+      class="w-auto flex gap-4 p-5 justify-center items-center">
+        <h2 class="" id="app_name">DailyTaskFlow</h2>
+        <img src="/assets/DailyTaskLogo.png" width="50" height="50" alt="Daily Task Flow logo">
+    </header>
+
+    <!-- container all -->
+    <div class="w-100 h-100 flex flex-col justify-center m-auto items-center">
+    <!-- container forms -->
+    <div class="container" class="flex justify-center align-middle">
+  <!-- Login Form -->
+<div class="container_form1">
+  <form class="login">
+  <h1>Inicia Sesión</h1>
+  <div class="socials">
+      <ion-icon name="logo-google"></ion-icon>  
+      <ion-icon name="logo-facebook"></ion-icon>
+      <ion-icon name="logo-github"></ion-icon>   
+  </div>
+  <span>Ingresa tus datos personales para acceder.</span>
+
+  <div class="container_input">
+      <ion-icon name="person-outline"></ion-icon>
+      <input type="text" placeholder="Usuario" id="user">
+  </div>        
+  
+  <div class="container_input">
+      <ion-icon name="key-outline"></ion-icon>
+      <input type="password" placeholder="Contraseña" id="password">
+  </div>
+
+  <a href="#">¿Olvidaste tu contraseña?</a>
+  <button type="submit" onclick="login()">Iniciar sesión</button>
+
+  </form>
+</div>
+
+<!-- Register form -->
+
+<div class="container_form2">
+  <form class="register">
+  <h1>Regístrate</h1>
+  <div class="socials">
+     <ion-icon name="logo-google"></ion-icon> 
+     <ion-icon name="logo-facebook"></ion-icon>
+     <ion-icon name="logo-github"></ion-icon>   
+  </div>
+  <span>Ingresa tus datos personales para registrarte.</span>
+
+  <div class="container_input">
+      <ion-icon name="person-outline"></ion-icon>
+      <input type="text" placeholder="Usuario" required>
+  </div> 
+
+  <div class="container_input">
+      <ion-icon name="mail-outline"></ion-icon>
+      <input type="text" placeholder="Correo electrónico" required>
+  </div> 
+
+  <div class="container_input">
+      <ion-icon name="key-outline"></ion-icon>
+      <input type="password" placeholder="Contraseña" required>
+  </div> 
+
+  <button>Registrarme</button>
+  
+</div>
+</form>
+  <div class="container_welcome">
+    <div class="welcome_login welcome">
+        <h2>Bienvenido</h2>
+        <p>SI no tienes una cuenta, haz click al botón de aquí abajo para registrarte.</p>
+        <button class="button" id="register_btn">Registrarme</button>
+    </div>
+
+    <div class="welcome_register welcome">
+        <h2>Hola!</h2>
+        <p>Ya tienes una cuenta? Ingresa con el botón de abajo.</p>
+        <button class="button" id="login_btn">Iniciar Sesión</button>
+    </div>
+  </div>
+</div>
+<div>
+  <i id="toggle">
+    <ion-icon
+      class="icon"
+      name="moon"
+      onclick="toggleColor()"
+    ></ion-icon>
+  </i>
+</div>
+</div>
+
+    <script src="./script.js"></script>
+    <script src="/src/script.js"></script>
+    <script src="/src/loginRegister.js"></script>
+    <script src="/src/toggle.js"></script>
+  </body>
+</html>

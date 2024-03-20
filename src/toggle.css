@@ -1,0 +1,66 @@
+
+i ion-icon {
+    margin-top: 20px;
+    font-size: 25px;
+    color: gray;
+}
+
+i ion-icon:hover{
+    color: rgb(100, 100, 100);
+    transform: translateY(3px);
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+}
+
+.container.active {
+    background-color: rgb(61, 61, 61);
+    box-shadow: 0px 0px 10px #1b1b1b;
+    transition: 0.2s ease all;
+}
+
+.container_form1.active{
+    background-color: rgb(41, 42, 42);
+    transition: none;
+    color: white;
+}
+.container_form2.active{
+    background-color: rgb(41, 42, 42);
+    color: white;
+    transition: none;
+}
+
+.container_form1.active a{color: red;}
+.container_form2.active a{color: red;}
+
+.container_form2.active ion-icon{color: #ac1123;}
+.container_form1.active ion-icon{color: #ac1123;}
+
+.container_form2.active ion-icon:hover{background-color:rgb(34, 34, 34);}
+.container_form1.active ion-icon:hover{background-color:rgb(34, 34, 34);}
+
+.container_welcome.active {
+    background-color: rgb(61, 62, 62);
+}
+
+.container_input.active{
+    background-color: rgb(34, 34, 34);
+}
+
+#app_name.active{
+    color: white;
+}
+
+#app_name{
+    font-size: 20px;
+}
+
+body.active {
+    background-color: rgb(34, 34, 34);
+    transition: 0.2s ease all;
+
+}
+
+#toggle.active {
+    transition: 0.2s ease all;
+
+}
